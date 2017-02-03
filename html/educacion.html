@@ -53,9 +53,9 @@
       </tr>
     </table>
     <h2>Agregar Educación</h2>
-    <form name="Formulario para agregar educación">
-      <label for="Año">Año</label>
-      <select id="Año">
+    <form name="Formulario para agregar educación" autocomplete="on">
+      <label for="Año">Año:</label>
+      <p><select id="Año" required>
         <option>1980</option>
         <option>1981</option>
         <option>1982</option>
@@ -94,7 +94,27 @@
         <option>2015</option>
         <option>2016</option>
         <option>2017</option>
-      </select>
+      </select></p></br>
+      <p><label for="Institucion">Institución:</label>
+      <input type="text" name="Institucion" id="Institucion" required>
+      </p>
+      <p><label for="Lugar">Lugar:</label>
+      <textarea name="Lugar" rows="8" cols="65" id="Lugar"></textarea>
+      </p>
+      <p><label for="Culminacion">¿Culminó?:</label>
+        <b>Sí</b><input type="radio" name="Culminacion" id="Culminacion1">
+        <b>No</b><input type="radio" name="Culminacion" id="Culminacion2">
+      </p>
+      <p><input type="submit" name="submit" value="Agregar">
+      </p>
+      <footer>
+        <ul>
+          <li><strong>Email:</strong> <a href="mailto:pedrop.castillo20@gmail.com?subject=correo">pedrop.castillo20@gmail.com</a></li>
+          <li><strong>Teléfono:</strong> 829-358-4269</li>
+          <li><strong>Dirección:</strong> C/Ignacio Agramonte #338-O Apart. 2B, Urb. Máximo Gómez, Santo Domingo Norte, República Dominicana.</li>
+        </ul>
+        <p>© Derechos Reservados 2017</p>
+      </footer>
     </form>
   </body>
 </html>
